@@ -611,7 +611,7 @@ class _LinearPercentIndicatorV2State extends State<LinearPercentIndicatorV2> wit
     super.initState();
   }
 
-  void _checkIfNeedCancelAnimation(LinearPercentIndicator oldWidget) {
+  void _checkIfNeedCancelAnimation(LinearPercentIndicatorV2 oldWidget) {
     if (oldWidget.animation &&
         !widget.animation &&
         _animationController != null) {
@@ -620,7 +620,7 @@ class _LinearPercentIndicatorV2State extends State<LinearPercentIndicatorV2> wit
   }
 
   @override
-  void didUpdateWidget(LinearPercentIndicator oldWidget) {
+  void didUpdateWidget(LinearPercentIndicatorV2 oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.percent != widget.percent) {
       if (_animationController != null) {
